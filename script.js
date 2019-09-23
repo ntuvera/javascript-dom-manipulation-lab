@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
   function createNewBlogPost() {
     let newDiv = document.createElement('div');
     newDiv.className = 'blog-post purple';
-    let newHeader = document.createElement('h2');
-    newHeader.innerText = 'Lorem Ipsum Title';
+    let newHeader = document.createElement('h1');
+    newHeader.innerText = 'Russia';
     let newP = document.createElement('h2');
     newP.innerText =
       'Lorem ispum and what not and other stuffLorem ispum and what not and other stuf ';
@@ -82,9 +82,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     newDiv.append(newP);
     document
       .getElementById('dom-adventures')
-      .insertAdjacentElement(
-        'afterend',
-        document.getElementById('dom-adventures')
-      );
+      .insertAdjacentElement('afterend', newDiv);
   }
+  createNewBlogPost();
 });
